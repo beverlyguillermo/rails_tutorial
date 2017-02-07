@@ -154,16 +154,42 @@ $ exit
 {% endsteps %}
 
 {:.sectionheader}
+# Install Git Bash
+
+{% steps %}
+{% list %}
+
+1. Download Git Bash
+ [https://github.com/git-for-windows/git/releases/download/v2.11.1.windows.1/Git-2.11.1-32-bit.exe](https://github.com/git-for-windows/git/releases/download/v2.11.1.windows.1/Git-2.11.1-32-bit.exe){:target='blank'}
+
+2. Once the download is finished, go to the Downloads folder, open the GitBash program.  If it asks if you want the program to make changes to your computer, click `Yes`.
+
+3. Allow the defaults for the installation by click `Next`, and then click `Install`.
+
+4. Once it's finished, click `Finish`.
+
+{% endlist %}
+{% endsteps %}
+
+{:.sectionheader}
 # Install Rails
 
 {% steps %}
 {% list %}
 
-1. Open Start Command Prompt with Ruby, type `gem install rails --version 5.0.1 --no-document --source=http://rubygems.org`
+1. Click on Start
 
-2. Windows Firewall prompt will ask if you'd like Ruby to allow access to RubyGems.org, click "Allow"
+2. Click on All Programs
 
-3. Once the Bash prompt finishes building and confirm everything is successful, type `rails -v`
+3. Scroll to Git and click on Git
+
+4. Click on Git Bash
+
+5. In Git Bash, type `gem install rails --version 5.0.1 --no-document --source=http://rubygems.org`
+
+6. Windows Firewall prompt will ask if you'd like Ruby to allow access to RubyGems.org, click "Allow"
+
+7. Once the Bash prompt finishes building and confirm everything is successful, type `rails -v`
 
 {% endlist %}
 {% highlight shell %}
