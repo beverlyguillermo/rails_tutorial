@@ -128,9 +128,9 @@ Click on [Windows 8.1](https://support.microsoft.com/en-us/help/15356){:target='
 
 **Once the installer is finished:**
 
-1. Click on Start
+1. Swipe right and click on Start Menu
 
-2. Click All Programs
+2. In the Start Menu, click or tap on All Apps (mouse over on the bottom left hand corner until your see the down arrow) or swipe up.
 
 3. Scroll down to Ruby 2.3.1-p112
 
@@ -149,10 +149,6 @@ $ ruby -v
 $ exit
 {% endhighlight %}
 {% endsteps %}
-
-{% protip %}
-Remember step 3! Anytime the tutorial asks you to open your command prompt or terminal, you'll need to **Start Command Prompt with Ruby**.
-{% endprotip %}
 
 {:.sectionheader}
 # Install Ruby Development Kit
@@ -183,16 +179,40 @@ $ exit
 {% endhighlight %}
 {% endsteps %}
 
+:.sectionheader}
+# Install Git Bash
+
+{% steps %}
+{% list %}
+
+1. Download Git Bash
+ [https://github.com/git-for-windows/git/releases/download/v2.11.1.windows.1/Git-2.11.1-32-bit.exe](https://github.com/git-for-windows/git/releases/download/v2.11.1.windows.1/Git-2.11.1-32-bit.exe){:target='blank'}
+
+2. Once the download is finished, go to the Downloads folder, open the GitBash program.  If it asks if you want the program to make changes to your computer, click `Yes`.
+
+3. Allow the defaults for the installation by click `Next`, and then click `Install`.
+
+4. Once it's finished, click `Finish`.
+
+{% endlist %}
+{% endsteps %}
+
 {:.sectionheader}
 # Install Rails
 
 {% steps %}
 {% list %}
-1. Open Prompt with Ruby, type `gem install rails --version 5.0.1 --no-document`
+1. Swipe right and click on Start Menu
 
-2. Windows Firewall prompt will ask if you'd like Ruby to allow access to RubyGems.org, click Allow
+2. In the Start Menu, click or tap on All Apps (mouse over on the bottom left hand corner until your see the down arrow) or swipe up.
 
-3. Once the Bash prompt finishes building and confirm everything is successful, type rails -v
+3. Scroll through apps and click or tap on `Git Bash`.
+
+3. In Git Bash, type `gem install rails --version 5.0.1 --no-document`
+
+4. Windows Firewall prompt will ask if you'd like Ruby to allow access to RubyGems.org, click Allow
+
+5. Once the Bash prompt finishes building and confirm everything is successful, type rails -v
 {% endlist %}
 {% highlight shell %}
 $ gem install rails --version 5.0.1 --no-document
